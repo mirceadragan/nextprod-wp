@@ -39,7 +39,7 @@
 		<p><?php np_e('Echipa noastră oferă asistență completă în dezvoltarea produselor, tehnicile de producție și controlul calității. În fabrica noastră din Sibiu, îmbinăm tradiția prelucrării artizanale a pielii cu tehnologii moderne.'); ?></p>
 		<a class="btn line" href="<?php echo esc_url(np_url('despre-noi')); ?>"><?php np_e('Cunoaște echipa și atelierul'); ?></a>
 	</div>
-	<img src="<?php echo $img; ?>detail.webp" alt="<?php np_a('Lucru manual la o piesă din piele'); ?>" loading="lazy">
+	<img src="<?php echo $img; ?>hand-stitch.webp" style="object-position:62% center" alt="<?php np_a('Lucru manual la o piesă din piele'); ?>" loading="lazy">
 </section>
 
 <?php get_template_part('parts/cta'); ?>
