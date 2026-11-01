@@ -15,7 +15,7 @@ $gallery = [
 	'bags.webp'   => 'Genți de voiaj și rucsacuri',
 	'wallet.webp' => 'Portofele și mici articole din piele',
 	'sleeve.webp' => 'Huse și accesorii pentru laptop',
-	'button.webp' => 'Detalii și componente îmbrăcate în piele',
+	'leather-buttons.webp' => 'Detalii și componente îmbrăcate în piele',
 	'strap-stitch.webp' => 'Cusături și finisaje artizanale',
 ];
 foreach ($gallery as $file => $caption) : ?>
