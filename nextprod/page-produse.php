@@ -14,7 +14,7 @@ $gallery = [
 	'hero.webp'   => 'Genți de mână și genți de umăr',
 	'bags.webp'   => 'Genți de voiaj și rucsacuri',
 	'wallet.webp' => 'Portofele și mici articole din piele',
-	'sleeve.webp' => 'Huse și accesorii pentru laptop',
+	'laptop-sleeve.webp' => 'Huse și accesorii pentru laptop',
 	'leather-buttons.webp' => 'Detalii și componente îmbrăcate în piele',
 	'strap-stitch.webp' => 'Cusături și finisaje artizanale',
 ];
