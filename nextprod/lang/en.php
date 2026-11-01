@@ -63,7 +63,7 @@ return [
 	'Un proces atent. Un produs cu identitate.' => 'A careful process. A product with identity.',
 	'Oferim fiecărui client posibilitatea de a crea produse sub propriul său brand. Vă ghidăm etapă cu etapă, de la viziunea designerului până la realizarea colecției.' => "We give every client the opportunity to create products under their own brand. We guide you step by step, from the designer's vision to the finished collection.",
 	'Să discutăm proiectul' => "Let's discuss your project",
-	'Finisarea manuală a componentelor din piele' => 'Hand finishing of leather components',
+	'Perforarea găurilor de cusătură într-o curea din piele' => 'Punching stitching holes in a leather strap',
 	'Analiză și consultanță' => 'Analysis and consulting',
 	'Analizăm dosarele tehnice și specificațiile de design. Discutăm materialele, termenele de execuție, prețurile și cerințele proiectului.' => 'We review technical files and design specifications, and discuss materials, lead times, pricing and project requirements.',
 	'Materiale și accesorii' => 'Materials and hardware',

@@ -13,7 +13,7 @@
 		<p><?php np_e('Oferim fiecărui client posibilitatea de a crea produse sub propriul său brand. Vă ghidăm etapă cu etapă, de la viziunea designerului până la realizarea colecției.'); ?></p>
 		<a class="btn line" href="<?php echo esc_url(np_url('contact')); ?>"><?php np_e('Să discutăm proiectul'); ?></a>
 	</div>
-	<img src="<?php echo $img; ?>finish.webp" alt="<?php np_a('Finisarea manuală a componentelor din piele'); ?>" loading="lazy">
+	<img src="<?php echo $img; ?>punching.webp" alt="<?php np_a('Perforarea găurilor de cusătură într-o curea din piele'); ?>" loading="lazy">
 </section>
 
 <section class="wrap long steps">
