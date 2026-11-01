@@ -16,7 +16,7 @@ $gallery = [
 	'wallet.webp' => 'Portofele și mici articole din piele',
 	'sleeve.webp' => 'Huse și accesorii pentru laptop',
 	'button.webp' => 'Detalii și componente îmbrăcate în piele',
-	'stitch.webp' => 'Cusături și finisaje artizanale',
+	'strap-stitch.webp' => 'Cusături și finisaje artizanale',
 ];
 foreach ($gallery as $file => $caption) : ?>
 		<figure><img src="<?php echo $img . $file; ?>" alt="<?php np_a($caption); ?>" loading="lazy"><figcaption><?php np_e($caption); ?></figcaption></figure>
