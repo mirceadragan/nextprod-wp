@@ -23,3 +23,20 @@ Pornește un WordPress complet în browser, instalează tema din `dist/nextprod.
 3. Pe hosting: **Aspect › Teme › Adaugă › Încarcă temă** → `dist/nextprod.zip` → **Înlocuiește tema curentă**.
 
 La prima activare tema creează singură paginile Acasă, Despre noi, Servicii, Produse, Contact (dacă lipsesc), setează Acasă ca pagină de pornire și legăturile permanente „Nume articol”.
+
+## Limbi (RO / EN / IT)
+
+Fără plugin. Româna e implicită (`/despre-noi/`), engleza și italiana au prefix:
+
+| RO | EN | IT |
+|---|---|---|
+| `/` | `/en/` | `/it/` |
+| `/despre-noi/` | `/en/about-us/` | `/it/chi-siamo/` |
+| `/servicii/` | `/en/services/` | `/it/servizi/` |
+| `/produse/` | `/en/products/` | `/it/prodotti/` |
+| `/contact/` | `/en/contact/` | `/it/contatti/` |
+
+- Textele din șabloane sunt în română, trecute prin `np_e('…')` / `np_a('…')`.
+- Traducerile: `nextprod/lang/en.php`, `nextprod/lang/it.php` — cheia este textul românesc **exact**. Dacă schimbi un text românesc, schimbă și cheia în ambele fișiere; altfel pagina EN/IT afișează textul în română.
+- Slug-urile traduse: `NP_SLUGS` în `nextprod/inc/i18n.php`.
+- Tema generează `<html lang>`, `rel="canonical"`, `hreflang` (inclusiv `x-default`) și selectorul RO | EN | IT din meniu.

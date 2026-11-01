@@ -1,1 +1,39 @@
-<?php get_header(); ?><section class="hero subhero"><div class="hero-inner"><p class="intro">Ce realizăm</p><h1>Piele. Formă. Identitate.</h1></div></section><section class="wrap"><h2 class="heading">Marochinărie pentru brandul dumneavoastră</h2><div class="gallery"><figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/hero.webp" alt="Genți de mână și genți de umăr" loading="lazy"><figcaption>Genți de mână și genți de umăr</figcaption></figure><figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/bags.webp" alt="Genți de voiaj și rucsacuri" loading="lazy"><figcaption>Genți de voiaj și rucsacuri</figcaption></figure><figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/wallet.webp" alt="Portofele și mici articole din piele" loading="lazy"><figcaption>Portofele și mici articole din piele</figcaption></figure><figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/sleeve.webp" alt="Huse și accesorii pentru laptop" loading="lazy"><figcaption>Huse și accesorii pentru laptop</figcaption></figure><figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/button.webp" alt="Detalii și componente îmbrăcate în piele" loading="lazy"><figcaption>Detalii și componente îmbrăcate în piele</figcaption></figure><figure><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/stitch.webp" alt="Cusături și finisaje artizanale" loading="lazy"><figcaption>Cusături și finisaje artizanale</figcaption></figure></div></section><section class="wrap long"><h2>O gamă variată de posibilități</h2><div class="products"><span>Genți shopper</span><span>Genți de umăr</span><span>Genți tote</span><span>Genți plic</span><span>Rucsacuri</span><span>Genți de voiaj</span><span>Genți pentru laptop</span><span>Genți tip sac</span><span>Portofele</span><span>Portcarduri</span><span>Curele</span><span>Coperți pentru pașaport</span></div><p>Fiecare piesă este creată cu atenție, folosind materiale de înaltă calitate, pentru durabilitate și un aspect estetic deosebit. Produsele sunt dezvoltate în funcție de designul și specificațiile fiecărui client.</p></section><section class="cta"><h2>O IDEE NOUĂ?</h2><p>De la prima schiță la colecția finală, construim împreună produse care poartă identitatea brandului dumneavoastră.</p><a class="btn" href="<?php echo esc_url(home_url('/contact/')); ?>">Haideți să colaborăm</a></section><?php get_footer(); ?>
+<?php get_header(); $img = esc_url(get_template_directory_uri()) . '/assets/'; ?>
+<section class="hero subhero">
+	<div class="hero-inner">
+		<p class="intro"><?php np_e('Ce realizăm'); ?></p>
+		<h1><?php np_e('Piele. Formă. Identitate.'); ?></h1>
+	</div>
+</section>
+
+<section class="wrap">
+	<h2 class="heading"><?php np_e('Marochinărie pentru brandul dumneavoastră'); ?></h2>
+	<div class="gallery">
+<?php
+$gallery = [
+	'hero.webp'   => 'Genți de mână și genți de umăr',
+	'bags.webp'   => 'Genți de voiaj și rucsacuri',
+	'wallet.webp' => 'Portofele și mici articole din piele',
+	'sleeve.webp' => 'Huse și accesorii pentru laptop',
+	'button.webp' => 'Detalii și componente îmbrăcate în piele',
+	'stitch.webp' => 'Cusături și finisaje artizanale',
+];
+foreach ($gallery as $file => $caption) : ?>
+		<figure><img src="<?php echo $img . $file; ?>" alt="<?php np_a($caption); ?>" loading="lazy"><figcaption><?php np_e($caption); ?></figcaption></figure>
+<?php endforeach; ?>
+	</div>
+</section>
+
+<section class="wrap long">
+	<h2><?php np_e('O gamă variată de posibilități'); ?></h2>
+	<div class="products">
+<?php
+foreach (['Genți shopper', 'Genți de umăr', 'Genți tote', 'Genți plic', 'Rucsacuri', 'Genți de voiaj', 'Genți pentru laptop', 'Genți tip sac', 'Portofele', 'Portcarduri', 'Curele', 'Coperți pentru pașaport'] as $p) : ?>
+		<span><?php np_e($p); ?></span>
+<?php endforeach; ?>
+	</div>
+	<p><?php np_e('Fiecare piesă este creată cu atenție, folosind materiale de înaltă calitate, pentru durabilitate și un aspect estetic deosebit. Produsele sunt dezvoltate în funcție de designul și specificațiile fiecărui client.'); ?></p>
+</section>
+
+<?php get_template_part('parts/cta'); ?>
+<?php get_footer(); ?>
