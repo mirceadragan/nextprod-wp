@@ -46,7 +46,7 @@ return [
 	'Măiestrie și calitate, de la prima schiță.' => 'Maestria e qualità, fin dal primo bozzetto.',
 	'Echipa noastră de profesioniști, cu o experiență de peste 30 de ani în domeniul marochinăriei, oferă asistență completă pe parcursul proceselor de dezvoltare, tehnicilor de producție și procedurilor de control al calității.' => 'Il nostro team di professionisti, con oltre 30 anni di esperienza nella pelletteria, offre assistenza completa lungo i processi di sviluppo, le tecniche di produzione e le procedure di controllo qualità.',
 	'În cadrul fabricii noastre, fiecare etapă a procesului de fabricație este urmărită cu meticulozitate pentru a satisface cele mai înalte standarde de calitate și sustenabilitate.' => 'Nel nostro stabilimento ogni fase del processo produttivo è seguita con meticolosità per soddisfare i più alti standard di qualità e sostenibilità.',
-	'Cusătură realizată manual în piele' => 'Cucitura eseguita a mano sulla pelle',
+	'Marcarea la cald a marginilor unor curele din piele' => 'Filettatura a caldo dei bordi di cinturini in pelle',
 	'Capacitatea de a da formă unei idei.' => "La capacità di dare forma a un'idea.",
 	'Îi considerăm pe clienții noștri o parte esențială a echipei.' => 'Consideriamo i nostri clienti parte essenziale del team.',
 	'Misiunea noastră' => 'La nostra missione',

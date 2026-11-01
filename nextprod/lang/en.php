@@ -46,7 +46,7 @@ return [
 	'Măiestrie și calitate, de la prima schiță.' => 'Craftsmanship and quality, from the very first sketch.',
 	'Echipa noastră de profesioniști, cu o experiență de peste 30 de ani în domeniul marochinăriei, oferă asistență completă pe parcursul proceselor de dezvoltare, tehnicilor de producție și procedurilor de control al calității.' => 'Our team of professionals, with over 30 years of experience in leather goods, provides full support throughout product development, production techniques and quality control procedures.',
 	'În cadrul fabricii noastre, fiecare etapă a procesului de fabricație este urmărită cu meticulozitate pentru a satisface cele mai înalte standarde de calitate și sustenabilitate.' => 'In our factory, every stage of the manufacturing process is meticulously monitored to meet the highest standards of quality and sustainability.',
-	'Cusătură realizată manual în piele' => 'Hand-sewn stitching in leather',
+	'Marcarea la cald a marginilor unor curele din piele' => 'Heat-creasing the edges of leather straps',
 	'Capacitatea de a da formă unei idei.' => 'The ability to give shape to an idea.',
 	'Îi considerăm pe clienții noștri o parte esențială a echipei.' => 'We see our clients as an essential part of the team.',
 	'Misiunea noastră' => 'Our mission',

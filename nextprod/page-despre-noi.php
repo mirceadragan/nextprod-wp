@@ -13,7 +13,7 @@
 		<p><?php np_e('Echipa noastră de profesioniști, cu o experiență de peste 30 de ani în domeniul marochinăriei, oferă asistență completă pe parcursul proceselor de dezvoltare, tehnicilor de producție și procedurilor de control al calității.'); ?></p>
 		<p><?php np_e('În cadrul fabricii noastre, fiecare etapă a procesului de fabricație este urmărită cu meticulozitate pentru a satisface cele mai înalte standarde de calitate și sustenabilitate.'); ?></p>
 	</div>
-	<img src="<?php echo $img; ?>hand.webp" alt="<?php np_a('Cusătură realizată manual în piele'); ?>" loading="lazy">
+	<img src="<?php echo $img; ?>straps.webp" alt="<?php np_a('Marcarea la cald a marginilor unor curele din piele'); ?>" loading="lazy">
 </section>
 
 <section class="quote">
