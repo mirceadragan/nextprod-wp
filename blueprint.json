@@ -1,0 +1,28 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "meta": {
+    "title": "Next Prod Servicii — previzualizare temă",
+    "author": "mirceadragan"
+  },
+  "landingPage": "/",
+  "preferredVersions": { "php": "8.3", "wp": "latest" },
+  "login": true,
+  "steps": [
+    {
+      "step": "setSiteOptions",
+      "options": { "blogname": "Next Prod Servicii", "blogdescription": "Luxury leather goods" }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/mirceadragan/nextprod-wp/main/dist/nextprod.zip"
+      },
+      "options": { "activate": true, "targetFolderName": "nextprod" }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; nextprod_setup_pages();"
+    }
+  ]
+}
