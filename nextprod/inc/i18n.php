@@ -1,6 +1,7 @@
 <?php
 /**
- * Multilingv fără plugin: RO (implicit, fără prefix), EN (/en/), IT (/it/).
+ * Multilingv fără plugin: EN (implicit, fără prefix), RO (/ro/), IT (/it/).
+ * Limba implicită se schimbă din NP_DEFAULT (adresele se recalculează singure).
  *
  * - Textele din șabloane sunt scrise în română și trec prin np_e() / np_a() / np_t().
  *   Traducerile sunt în lang/en.php și lang/it.php (cheia = textul românesc exact).
@@ -9,9 +10,11 @@
  *   (slug-urile românești), limba vine din prefixul URL-ului.
  */
 
+const NP_DEFAULT = 'en';
+
 const NP_LANGS = [
-	'ro' => ['label' => 'RO', 'locale' => 'ro-RO', 'og' => 'ro_RO'],
 	'en' => ['label' => 'EN', 'locale' => 'en-GB', 'og' => 'en_GB'],
+	'ro' => ['label' => 'RO', 'locale' => 'ro-RO', 'og' => 'ro_RO'],
 	'it' => ['label' => 'IT', 'locale' => 'it-IT', 'og' => 'it_IT'],
 ];
 
@@ -24,10 +27,10 @@ const NP_SLUGS = [
 	'contact'    => ['ro' => 'contact',    'en' => 'contact',  'it' => 'contatti'],
 ];
 
-/** Limba curentă: 'ro' | 'en' | 'it' */
+/** Limba curentă: 'ro' | 'en' | 'it' (NP_DEFAULT dacă URL-ul nu are prefix) */
 function np_lang() {
 	$l = get_query_var('nplang');
-	return isset(NP_LANGS[$l]) ? $l : 'ro';
+	return isset(NP_LANGS[$l]) ? $l : NP_DEFAULT;
 }
 
 /** Traduce un text românesc în limba curentă (sau în $lang). */
@@ -48,7 +51,7 @@ function np_a($ro) { echo esc_attr(np_t($ro)); }
 function np_url($key = 'acasa', $lang = null) {
 	$lang = $lang ?: np_lang();
 	$slug = NP_SLUGS[$key][$lang] ?? '';
-	$path = ($lang === 'ro' ? '' : $lang . '/') . ($slug !== '' ? $slug . '/' : '');
+	$path = ($lang === NP_DEFAULT ? '' : $lang . '/') . ($slug !== '' ? $slug . '/' : '');
 	return home_url('/' . $path);
 }
 
@@ -69,23 +72,30 @@ add_filter('query_vars', function ($vars) { $vars[] = 'nplang'; return $vars; })
 add_action('init', function () {
 	$front = (int) get_option('page_on_front');
 	foreach (array_keys(NP_LANGS) as $l) {
-		if ($l === 'ro') continue;
-		add_rewrite_rule("^$l/?$", $front ? "index.php?page_id=$front&nplang=$l" : "index.php?nplang=$l", 'top');
+		$prefix = $l === NP_DEFAULT ? '' : $l . '/';
+		if ($prefix) add_rewrite_rule("^$l/?$", $front ? "index.php?page_id=$front&nplang=$l" : "index.php?nplang=$l", 'top');
 		foreach (NP_SLUGS as $key => $slugs) {
 			if ($key === 'acasa') continue;
-			add_rewrite_rule('^' . $l . '/' . $slugs[$l] . '/?$', 'index.php?pagename=' . $key . '&nplang=' . $l, 'top');
+			add_rewrite_rule('^' . $prefix . $slugs[$l] . '/?$', 'index.php?pagename=' . $key . '&nplang=' . $l, 'top');
 		}
 	}
 	// După o actualizare a temei (fără reactivare) regulile trebuie regenerate o dată.
-	$sig = md5(wp_json_encode([NP_SLUGS, $front, wp_get_theme()->get('Version')]));
+	$sig = md5(wp_json_encode([NP_DEFAULT, NP_SLUGS, $front, wp_get_theme()->get('Version')]));
 	if (get_option('nextprod_rewrite_sig') !== $sig) {
 		flush_rewrite_rules(false);
 		update_option('nextprod_rewrite_sig', $sig);
 	}
 }, 20);
 
-// WordPress ar redirecționa /en/about-us/ către /despre-noi/ — nu pentru paginile traduse.
-add_filter('redirect_canonical', function ($redirect) { return np_lang() === 'ro' ? $redirect : false; });
+// WordPress ar redirecționa /about-us/ către /despre-noi/ — nu pentru adresele noastre.
+add_filter('redirect_canonical', function ($redirect) { return get_query_var('nplang') ? false : $redirect; });
+
+// Adresele native ale paginilor (/despre-noi/, linkuri vechi) -> 301 către versiunea RO (/ro/despre-noi/).
+add_action('template_redirect', function () {
+	if (get_query_var('nplang') || is_front_page()) return;
+	$key = np_current_key();
+	if ($key) { wp_safe_redirect(np_url($key, 'ro'), 301); exit; }
+});
 
 /* ---------- <html lang>, <title>, canonical, hreflang ---------- */
 
@@ -110,7 +120,7 @@ add_action('wp_head', function () {
 	foreach (NP_LANGS as $l => $info) {
 		echo '<link rel="alternate" hreflang="' . esc_attr($info['locale']) . '" href="' . esc_url(np_url($key, $l)) . '">' . "\n";
 	}
-	echo '<link rel="alternate" hreflang="x-default" href="' . esc_url(np_url($key, 'ro')) . '">' . "\n";
+	echo '<link rel="alternate" hreflang="x-default" href="' . esc_url(np_url($key, NP_DEFAULT)) . '">' . "\n";
 	echo '<meta property="og:locale" content="' . esc_attr(NP_LANGS[np_lang()]['og']) . '">' . "\n";
 }, 1);
 

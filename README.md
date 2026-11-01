@@ -24,19 +24,21 @@ Pornește un WordPress complet în browser, instalează tema din `dist/nextprod.
 
 La prima activare tema creează singură paginile Acasă, Despre noi, Servicii, Produse, Contact (dacă lipsesc), setează Acasă ca pagină de pornire și legăturile permanente „Nume articol”.
 
-## Limbi (RO / EN / IT)
+## Limbi (EN / RO / IT)
 
-Fără plugin. Româna e implicită (`/despre-noi/`), engleza și italiana au prefix:
+Fără plugin. Engleza e implicită (fără prefix), româna și italiana au prefix:
 
-| RO | EN | IT |
+| EN (implicit) | RO | IT |
 |---|---|---|
-| `/` | `/en/` | `/it/` |
-| `/despre-noi/` | `/en/about-us/` | `/it/chi-siamo/` |
-| `/servicii/` | `/en/services/` | `/it/servizi/` |
-| `/produse/` | `/en/products/` | `/it/prodotti/` |
-| `/contact/` | `/en/contact/` | `/it/contatti/` |
+| `/` | `/ro/` | `/it/` |
+| `/about-us/` | `/ro/despre-noi/` | `/it/chi-siamo/` |
+| `/services/` | `/ro/servicii/` | `/it/servizi/` |
+| `/products/` | `/ro/produse/` | `/it/prodotti/` |
+| `/contact/` | `/ro/contact/` | `/it/contatti/` |
 
+- Adresele vechi românești (`/despre-noi/`, `/servicii/`, `/produse/`) fac redirect 301 către `/ro/...`.
+- Limba implicită: constanta `NP_DEFAULT` din `nextprod/inc/i18n.php` (adresele se recalculează singure).
 - Textele din șabloane sunt în română, trecute prin `np_e('…')` / `np_a('…')`.
 - Traducerile: `nextprod/lang/en.php`, `nextprod/lang/it.php` — cheia este textul românesc **exact**. Dacă schimbi un text românesc, schimbă și cheia în ambele fișiere; altfel pagina EN/IT afișează textul în română.
-- Slug-urile traduse: `NP_SLUGS` în `nextprod/inc/i18n.php`.
-- Tema generează `<html lang>`, `rel="canonical"`, `hreflang` (inclusiv `x-default`) și selectorul RO | EN | IT din meniu.
+- Slug-urile traduse: `NP_SLUGS` în același fișier.
+- Tema generează `<html lang>`, `rel="canonical"`, `hreflang` (`x-default` = engleza) și selectorul EN | RO | IT din meniu.
