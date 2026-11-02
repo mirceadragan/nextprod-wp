@@ -9,7 +9,7 @@
 <?php wp_body_open(); ?>
 <header>
 	<div class="nav">
-		<a class="brand" href="<?php echo esc_url(np_url('acasa')); ?>" aria-label="Next Prod Servicii, <?php np_a('Acasă'); ?>">NEXT PROD<small>LUXURY LEATHER GOODS</small></a>
+		<a class="brand" href="<?php echo esc_url(np_url('acasa')); ?>" aria-label="Next Prod Servicii, <?php np_a('Acasă'); ?>">NEXT PROD SERVICII<small>LUXURY LEATHER GOODS</small></a>
 		<button class="menu" aria-expanded="false" aria-controls="navlinks" aria-label="<?php np_a('Deschide meniul'); ?>" data-open="<?php np_a('Deschide meniul'); ?>" data-close="<?php np_a('Închide meniul'); ?>">☰</button>
 		<nav class="navlinks" id="navlinks">
 			<a href="<?php echo esc_url(np_url('acasa')); ?>"><?php np_e('Acasă'); ?></a>

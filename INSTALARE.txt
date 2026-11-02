@@ -4,5 +4,5 @@ NEXT PROD SERVICII — WORDPRESS
 2. Activați tema Next Prod Servicii. La activare se creează automat (dacă lipsesc) paginile
    Acasă, Despre noi, Servicii, Produse, Contact; Acasă devine pagina de pornire statică,
    iar legăturile permanente se setează pe „Nume articol”.
-3. Aspect > Personalizare > Date de contact Next Prod: completați e-mailul, telefonul și adresa.
+3. Aspect > Personalizare > Date de contact Next Prod Servicii: completați e-mailul, telefonul și adresa.
 Textele paginilor de prezentare sunt în șabloanele PHP ale temei; acestea se modifică în cod.

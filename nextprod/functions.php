@@ -16,7 +16,7 @@ add_action('wp_enqueue_scripts', function () {
 function nextprod_contact() { return get_theme_mod('nextprod_email', ''); }
 
 add_action('customize_register', function ($c) {
-	$c->add_section('nextprod_contact', ['title' => 'Date de contact Next Prod']);
+	$c->add_section('nextprod_contact', ['title' => 'Date de contact Next Prod Servicii']);
 	foreach (['email' => 'E-mail', 'phone' => 'Telefon', 'address' => 'Adresa completă'] as $key => $label) {
 		$c->add_setting('nextprod_' . $key, ['default' => '', 'sanitize_callback' => $key === 'email' ? 'sanitize_email' : 'sanitize_text_field']);
 		$c->add_control('nextprod_' . $key, ['label' => $label, 'section' => 'nextprod_contact', 'type' => $key === 'email' ? 'email' : 'text']);
