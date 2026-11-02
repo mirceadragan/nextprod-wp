@@ -28,7 +28,7 @@ return [
 	'Piele pentru realizarea articolelor de marochinărie' => 'Pelle per la realizzazione di articoli di pelletteria',
 	'Materiale și personalizare' => 'Materiali e personalizzazione',
 	'Piele din surse sustenabile, materiale premium și detalii care dau identitate fiecărui brand.' => 'Pelle da fonti sostenibili, materiali pregiati e dettagli che danno identità a ogni marchio.',
-	'Cusătură manuală pe piele' => 'Cucitura a mano su pelle',
+	'Tăierea tiparelor pentru un produs din piele' => 'Taglio dei modelli per un prodotto in pelle',
 	'Tipare și prototipuri' => 'Modelli e prototipi',
 	'Transformăm schițele în produse, prin expertiză tehnică, tipare precise și dezvoltarea atentă a prototipurilor.' => 'Trasformiamo i bozzetti in prodotti grazie a competenza tecnica, modelli precisi e uno sviluppo accurato dei prototipi.',
 	'Realizarea unei componente din piele în atelier' => 'Realizzazione di un componente in pelle in laboratorio',

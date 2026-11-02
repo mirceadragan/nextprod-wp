@@ -28,7 +28,7 @@ return [
 	'Piele pentru realizarea articolelor de marochinărie' => 'Leather for crafting leather goods',
 	'Materiale și personalizare' => 'Materials and customisation',
 	'Piele din surse sustenabile, materiale premium și detalii care dau identitate fiecărui brand.' => 'Sustainably sourced leather, premium materials and details that give every brand its identity.',
-	'Cusătură manuală pe piele' => 'Hand stitching on leather',
+	'Tăierea tiparelor pentru un produs din piele' => 'Cutting patterns for a leather product',
 	'Tipare și prototipuri' => 'Patterns and prototypes',
 	'Transformăm schițele în produse, prin expertiză tehnică, tipare precise și dezvoltarea atentă a prototipurilor.' => 'We turn sketches into products through technical expertise, precise patterns and careful prototype development.',
 	'Realizarea unei componente din piele în atelier' => 'Making a leather component in the workshop',

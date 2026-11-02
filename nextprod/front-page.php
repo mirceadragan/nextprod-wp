@@ -16,7 +16,7 @@
 			<p><?php np_e('Piele din surse sustenabile, materiale premium și detalii care dau identitate fiecărui brand.'); ?></p>
 		</article>
 		<article>
-			<a href="<?php echo esc_url(np_url('servicii')); ?>"><img src="<?php echo $img; ?>strap-stitch.webp" alt="<?php np_a('Cusătură manuală pe piele'); ?>" loading="lazy"><h3><?php np_e('Tipare și prototipuri'); ?></h3></a>
+			<a href="<?php echo esc_url(np_url('servicii')); ?>"><img src="<?php echo $img; ?>patterns.webp" alt="<?php np_a('Tăierea tiparelor pentru un produs din piele'); ?>" loading="lazy"><h3><?php np_e('Tipare și prototipuri'); ?></h3></a>
 			<p><?php np_e('Transformăm schițele în produse, prin expertiză tehnică, tipare precise și dezvoltarea atentă a prototipurilor.'); ?></p>
 		</article>
 		<article>
