@@ -64,3 +64,13 @@ function nextprod_setup_pages() {
 	flush_rewrite_rules();
 }
 add_action('after_switch_theme', 'nextprod_setup_pages');
+
+/** Iconița site-ului (favicon) din logo. Dacă în WordPress e setată o „Iconiță site”, aceea are prioritate. */
+add_action('wp_head', function () {
+	if (has_site_icon()) return;
+	$u = esc_url(get_template_directory_uri() . '/assets/icons/');
+	echo '<link rel="icon" href="' . $u . 'favicon.ico" sizes="any">' . "\n";
+	echo '<link rel="icon" type="image/png" sizes="32x32" href="' . $u . 'icon-32.png">' . "\n";
+	echo '<link rel="icon" type="image/png" sizes="192x192" href="' . $u . 'icon-192.png">' . "\n";
+	echo '<link rel="apple-touch-icon" href="' . $u . 'apple-touch-icon.png">' . "\n";
+}, 2);

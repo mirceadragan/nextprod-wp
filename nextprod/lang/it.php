@@ -115,7 +115,6 @@ return [
 	'Produse complete sau doar o parte din ele' => 'Prodotti completi o solo una parte',
 	'Pe lângă produsele finite, realizăm și produse parțiale, componente sau doar accesorii, în funcție de nevoile fiecărui client și de modelul său de afaceri.' => 'Oltre ai prodotti finiti, realizziamo anche prodotti parziali, componenti o solo accessori, in base alle esigenze dei clienti e ai loro modelli di business.',
 	'Mai jos sunt câteva dintre proiectele realizate pentru clienții noștri: interioare și organizatoare, mânere, curele și componente livrate gata de asamblare.' => 'Ecco alcuni dei progetti realizzati per i nostri clienti: interni e organizer, maniglie, cinghie e componenti consegnati pronti per l\'assemblaggio.',
-	'Mărcile clienților au fost eliminate din fotografii din motive de confidențialitate.' => 'I marchi dei clienti sono stati rimossi dalle foto per riservatezza.',
 	'Atelierul de producție' => 'Il nostro laboratorio di produzione',
 	'Componente din piele cognac: buzunare, mânere și curele' => 'Componenti in pelle cognac: tasche, maniglie e cinghie',
 	'Interior pentru valiză' => 'Interno per valigia',

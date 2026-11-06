@@ -43,7 +43,6 @@ foreach ($projects as $i => $caption) :
 		<figure><a href="<?php echo $file; ?>" class="lightbox"><img src="<?php echo $file; ?>" alt="<?php np_a($caption); ?>" loading="lazy"></a><figcaption><?php np_e($caption); ?></figcaption></figure>
 <?php endforeach; ?>
 	</div>
-	<p class="note"><?php np_e('Mărcile clienților au fost eliminate din fotografii din motive de confidențialitate.'); ?></p>
 </section>
 
 <?php get_template_part('parts/cta'); ?>
