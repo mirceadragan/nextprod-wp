@@ -13,7 +13,7 @@ Pornește un WordPress complet în browser, instalează tema din `dist/nextprod.
 | Cale | Rol |
 |---|---|
 | `nextprod/` | sursa temei (PHP, CSS, JS, `assets/` cu imaginile .webp) |
-| `dist/nextprod.zip` | tema instalabilă — se generează cu `./build.sh` |
+| `dist/nextprod.zip`, `dist/nextprod-vX.Y.zip` | tema instalabilă (versiunea din `style.css`) — se generează cu `./build.sh` |
 | `blueprint.json` | configurația pentru Playground |
 
 ## Flux de lucru
