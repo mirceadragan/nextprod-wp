@@ -16,6 +16,7 @@
 			<a href="<?php echo esc_url(np_url('despre-noi')); ?>"><?php np_e('Despre noi'); ?></a>
 			<a href="<?php echo esc_url(np_url('servicii')); ?>"><?php np_e('Servicii'); ?></a>
 			<a href="<?php echo esc_url(np_url('produse')); ?>"><?php np_e('Produse'); ?></a>
+			<a href="<?php echo esc_url(np_url('proiecte')); ?>"><?php np_e('Proiecte'); ?></a>
 			<a class="outline" href="<?php echo esc_url(np_url('contact')); ?>"><?php np_e('Hai să colaborăm'); ?></a>
 			<?php np_language_switcher(); ?>
 		</nav>

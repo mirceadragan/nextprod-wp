@@ -33,6 +33,7 @@ foreach (['Genți shopper', 'Genți de umăr', 'Genți tote', 'Genți plic', 'Ru
 <?php endforeach; ?>
 	</div>
 	<p><?php np_e('Fiecare piesă este creată cu atenție, folosind materiale de înaltă calitate, pentru durabilitate și un aspect estetic deosebit. Produsele sunt dezvoltate în funcție de designul și specificațiile fiecărui client.'); ?></p>
+	<p><?php np_e('Pe lângă produsele finite, realizăm și produse parțiale, componente sau doar accesorii, în funcție de nevoile fiecărui client și de modelul său de afaceri.'); ?></p>
 </section>
 
 <?php get_template_part('parts/cta'); ?>

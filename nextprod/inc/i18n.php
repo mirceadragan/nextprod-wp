@@ -24,6 +24,7 @@ const NP_SLUGS = [
 	'despre-noi' => ['ro' => 'despre-noi', 'en' => 'about-us', 'it' => 'chi-siamo'],
 	'servicii'   => ['ro' => 'servicii',   'en' => 'services', 'it' => 'servizi'],
 	'produse'    => ['ro' => 'produse',    'en' => 'products', 'it' => 'prodotti'],
+	'proiecte'   => ['ro' => 'proiecte',   'en' => 'projects', 'it' => 'progetti'],
 	'contact'    => ['ro' => 'contact',    'en' => 'contact',  'it' => 'contatti'],
 ];
 
@@ -82,6 +83,7 @@ add_action('init', function () {
 	// După o actualizare a temei (fără reactivare) regulile trebuie regenerate o dată.
 	$sig = md5(wp_json_encode([NP_DEFAULT, NP_SLUGS, $front, wp_get_theme()->get('Version')]));
 	if (get_option('nextprod_rewrite_sig') !== $sig) {
+		if (function_exists('nextprod_ensure_pages')) nextprod_ensure_pages(); // pagini noi apărute într-o actualizare
 		flush_rewrite_rules(false);
 		update_option('nextprod_rewrite_sig', $sig);
 	}

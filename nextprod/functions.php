@@ -28,12 +28,14 @@ add_action('customize_register', function ($c) {
  * ca pagină de pornire statică și legăturile permanente „Nume articol”.
  * Rulează la activarea temei; este idempotentă (nu dublează nimic).
  */
-function nextprod_setup_pages() {
+/** Creează paginile care lipsesc (fără să modifice nimic altceva). Returnează slug => ID. */
+function nextprod_ensure_pages() {
 	$pages = [
 		'acasa'      => 'Acasă',
 		'despre-noi' => 'Despre noi',
 		'servicii'   => 'Servicii',
 		'produse'    => 'Produse',
+		'proiecte'   => 'Proiecte',
 		'contact'    => 'Contact',
 	];
 	$ids = [];
@@ -46,6 +48,11 @@ function nextprod_setup_pages() {
 			'post_type'   => 'page',
 		]);
 	}
+	return $ids;
+}
+
+function nextprod_setup_pages() {
+	$ids = nextprod_ensure_pages();
 	if (get_option('show_on_front') !== 'page' || !get_option('page_on_front')) {
 		update_option('show_on_front', 'page');
 		update_option('page_on_front', $ids['acasa']);

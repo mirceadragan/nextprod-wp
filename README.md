@@ -34,6 +34,7 @@ Fără plugin. Engleza e implicită (fără prefix), româna și italiana au pre
 | `/about-us/` | `/ro/despre-noi/` | `/it/chi-siamo/` |
 | `/services/` | `/ro/servicii/` | `/it/servizi/` |
 | `/products/` | `/ro/produse/` | `/it/prodotti/` |
+| `/projects/` | `/ro/proiecte/` | `/it/progetti/` |
 | `/contact/` | `/ro/contact/` | `/it/contatti/` |
 
 - Adresele vechi românești (`/despre-noi/`, `/servicii/`, `/produse/`) fac redirect 301 către `/ro/...`.
