@@ -1,6 +1,6 @@
 /*
 Theme Name: Next Prod Servicii
-Version: 1.27
+Version: 1.28
 Description: Temă pentru producătorul de marochinărie Next Prod Servicii.
 Author: Next Prod Servicii
 */
@@ -10,3 +10,4 @@ Author: Next Prod Servicii
 .projects-wrap{padding-top:0}.projects{columns:3 280px;column-gap:20px}.projects figure{break-inside:avoid;margin:0 0 28px}.projects img{width:100%;height:auto;display:block;background:#f3f2ee;transition:opacity .2s}.projects a:hover img{opacity:.85}.projects figcaption{font-size:14px;margin-top:10px;color:#73796b}.projects-wrap .note{font-size:13px;color:#73796b;margin-top:12px}
 .lb{position:fixed;inset:0;background:rgba(20,18,15,.92);z-index:1000;display:flex;align-items:center;justify-content:center;padding:40px 70px}.lb[hidden]{display:none}.lb figure{margin:0;text-align:center;max-width:100%;max-height:100%}.lb img{max-width:100%;max-height:calc(100vh - 120px);object-fit:contain}.lb figcaption{color:#eee;font-size:15px;margin-top:12px}.lb button{position:absolute;background:none;border:0;color:#fff;font-size:44px;cursor:pointer;padding:10px 16px;line-height:1}.lb-x{top:10px;right:14px}.lb-p{left:8px;top:50%;transform:translateY(-50%)}.lb-n{right:8px;top:50%;transform:translateY(-50%)}@media(max-width:760px){.lb{padding:50px 12px}.lb-p,.lb-n{top:auto;bottom:10px;transform:none}}
 .atelier{padding-top:20px}.atelier-grid{display:grid;grid-template-columns:1fr 2fr;gap:20px}.atelier-grid img{width:100%;height:520px;object-fit:cover}@media(max-width:760px){.atelier-grid{grid-template-columns:1fr}.atelier-grid img{height:auto}}
+.atelier-video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;margin-top:20px;background:#222}

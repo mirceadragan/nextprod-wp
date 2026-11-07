@@ -48,6 +48,10 @@
 		<img src="<?php echo $img; ?>atelier-1.webp" alt="<?php np_a('Posturi de lucru în atelierul de producție'); ?>" loading="lazy">
 		<img src="<?php echo $img; ?>atelier-2.webp" alt="<?php np_a('Mașini de cusut în atelierul de marochinărie'); ?>" loading="lazy">
 	</div>
+	<video class="atelier-video" autoplay muted loop playsinline preload="metadata" poster="<?php echo $img; ?>video/atelier-poster.webp" aria-label="<?php np_a('Imagini filmate în atelierul de producție'); ?>">
+		<source src="<?php echo $img; ?>video/atelier-mobil.mp4" type="video/mp4" media="(max-width: 760px)">
+		<source src="<?php echo $img; ?>video/atelier.mp4" type="video/mp4">
+	</video>
 </section>
 
 <?php get_template_part('parts/cta'); ?>

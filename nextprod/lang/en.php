@@ -147,4 +147,5 @@ return [
 	'Atelierul nostru din Sibiu' => 'Our workshop in Sibiu',
 	'Posturi de lucru în atelierul de producție' => 'Workstations in our production workshop',
 	'Mașini de cusut în atelierul de marochinărie' => 'Sewing machines in our leather goods workshop',
+	'Imagini filmate în atelierul de producție' => 'Footage from our production workshop',
 ];
