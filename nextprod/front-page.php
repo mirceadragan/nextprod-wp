@@ -42,5 +42,13 @@
 	<img src="<?php echo $img; ?>hand-stitch.webp" style="object-position:62% center" alt="<?php np_a('Lucru manual la o piesă din piele'); ?>" loading="lazy">
 </section>
 
+<section class="wrap atelier">
+	<h2 class="heading"><?php np_e('Atelierul nostru din Sibiu'); ?></h2>
+	<div class="atelier-grid">
+		<img src="<?php echo $img; ?>atelier-1.webp" alt="<?php np_a('Posturi de lucru în atelierul de producție'); ?>" loading="lazy">
+		<img src="<?php echo $img; ?>atelier-2.webp" alt="<?php np_a('Mașini de cusut în atelierul de marochinărie'); ?>" loading="lazy">
+	</div>
+</section>
+
 <?php get_template_part('parts/cta'); ?>
 <?php get_footer(); ?>
