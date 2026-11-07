@@ -39,7 +39,7 @@ $projects = [
 	'Oglindă cu ramă din piele, față și spate',
 ];
 foreach ($projects as $i => $caption) :
-	$file = $img . sprintf('proiect-%02d.webp', $i + 1); ?>
+	$file = $img . sprintf('proiect-%02d.webp', $i + 1) . '?v=' . rawurlencode(wp_get_theme()->get('Version')); ?>
 		<figure><a href="<?php echo $file; ?>" class="lightbox"><img src="<?php echo $file; ?>" alt="<?php np_a($caption); ?>" loading="lazy"></a><figcaption><?php np_e($caption); ?></figcaption></figure>
 <?php endforeach; ?>
 	</div>
