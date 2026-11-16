@@ -41,6 +41,21 @@ $projects = [
 	18 => 'Mânere roșii',
 	19 => 'Piese negre cilindrice',
 	20 => 'Oglindă cu ramă din piele, față și spate',
+	28 => 'Model din piele împletită, negru',
+	29 => 'Aplicații decorative negre',
+	30 => 'Aplicații brodate negre',
+	31 => 'Aplicații negre în formă de ursuleț',
+	32 => 'Etichetă de bagaj din piele neagră',
+	33 => 'Accesorii din piele lucrate manual',
+	34 => 'Aplicații din piele în formă de litere',
+	35 => 'Aplicații din piele în formă de fundă',
+	36 => 'Aplicații florale decorative',
+	37 => 'Curele din piele și lanț auriu',
+	38 => 'Curele decorative din piele',
+	39 => 'Mini geantă din piele neagră',
+	40 => 'Ornament din ținte metalice',
+	41 => 'Textură din piele neagră împletită',
+	42 => 'Piele mov cu ținte metalice',
 ];
 $ver = '?v=' . rawurlencode(wp_get_theme()->get('Version'));
 foreach ($projects as $n => $caption) :
