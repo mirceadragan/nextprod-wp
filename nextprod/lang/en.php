@@ -157,7 +157,7 @@ return [
 	'Aplicații florale decorative' => 'Decorative floral appliqués',
 	'Curele din piele și lanț auriu' => 'Leather straps and gold chain',
 	'Curele decorative din piele' => 'Decorative leather straps',
-	'Mini geantă din piele neagră' => 'Mini black leather bag',
+	'Mini geantă din piele neagră, ținută în palmă' => 'Mini black leather bag, held in the palm',
 	'Ornament din ținte metalice' => 'Metal stud ornament',
 	'Textură din piele neagră împletită' => 'Black woven leather texture',
 	'Piele mov cu ținte metalice' => 'Purple leather with metal studs',

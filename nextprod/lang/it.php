@@ -157,7 +157,7 @@ return [
 	'Aplicații florale decorative' => 'Applicazioni floreali decorative',
 	'Curele din piele și lanț auriu' => 'Cinghie in pelle e catena dorata',
 	'Curele decorative din piele' => 'Cinture decorative in pelle',
-	'Mini geantă din piele neagră' => 'Mini borsa in pelle nera',
+	'Mini geantă din piele neagră, ținută în palmă' => 'Mini borsa in pelle nera, tenuta nel palmo',
 	'Ornament din ținte metalice' => 'Decorazione con borchie metalliche',
 	'Textură din piele neagră împletită' => 'Texture in pelle nera intrecciata',
 	'Piele mov cu ținte metalice' => 'Pelle viola con borchie metalliche',
